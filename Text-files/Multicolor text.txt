@@ -1,0 +1,57 @@
+Multicolor text
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .multicolor-text {
+            text-align: center;
+            font-size: 50px;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="multicolor-text">
+        Welcome To GeeksforGeeks!
+    </div>
+</body>
+
+</html>
+
+https://www.youtube.com/watch?v=-u7pzg3GcFU
+
+https://www.w3docs.com/snippets/css/how-to-create-a-multicolor-text-in-html-and-css.html#:~:text=This%20is%20the%20easiest%20way,names%20of%20your%20preferred%20colors.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The title of the document</title>
+    <style>
+      .multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="multicolortext">Let’s be creative!</span>
+    </h1>
+  </body>
+</html>

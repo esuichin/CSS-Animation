@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{   
+    background-color: #0a0a0a;    
+}
+nav{
+    height: 100vh;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;    
+}
+a{   
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;    
+}
+a:before,
+a:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #ff3c78,  #18f08b;
+    background: linear-gradient(
+        to right,
+        #fd004c, #fe9000, #fff020,
+        #3edf4b, #3363ff, #b102b7        
+    );                  
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+a:hover{
+    color: #ffffff;
+}
+a:hover:after{
+    width: 100%;
+}
+

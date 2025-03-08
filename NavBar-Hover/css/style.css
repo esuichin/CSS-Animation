@@ -1,0 +1,77 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body{     
+    background-color: #0a1e29;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;   
+}
+nav{    
+    width: 100vw;      
+}
+ul{ 
+    list-style-type: none; 
+    margin: 0;     
+    padding: 0;  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    position: relative;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;    
+}
+a{
+    z-index: 1;
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 13px 10px;
+}
+li:before{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0d7cff;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+}
+li:after{
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0d7cff;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+a:before{ 
+    content: "";    
+    position: absolute;     
+    height: 33.33%;
+    width: 0;
+    background-color: #0d7cff;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+}
+li:hover:before,
+li:hover:after,
+li:hover a:before{
+    width: 100%;
+}
+
