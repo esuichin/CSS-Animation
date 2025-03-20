@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.cus-div{
+    width: 100%;
+    position: relative;
+}
+#skew1{
+    background: url(2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+}
+#skew2{
+    background: #fff;
+    z-index: 9;   
+}
+#skew3{
+    background: #c2c2c2;
+    z-index: 8;   
+}
+#skew4{
+    background: #fff;
+    z-index: 7;   
+}
+#skew5{
+    background: #c2c2c2;
+    z-index: 6;   
+}
+.cus-div:after{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    content: '';
+}
+#skew1:after,
+#skew2:after,
+#skew4:after{
+    transform-origin: left bottom;
+    transform: skewY(3deg);
+}
+#skew3:after{
+    transform-origin: right bottom;
+    transform: skewY(-3deg);
+}
+.content{
+    font-weight: bold;
+    text-align:center;
+    padding: 200px 50px;
+    overflow: hidden;
+    display: block;
+    height: auto;
+}
+.content h2{
+    margin: 0;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: big john;
+    font-size: 60px;
+}
+.content a{
+    text-decoration: none;
+    color: #fff;
+    background: #039dc8;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+.content h3{
+    margin: 0;
+    color: #262626;
+    text-transform: uppercase;
+    font-family: big john;
+    font-size: 40px;
+}
+.content p{
+    padding: 0 300px;
+    line-height: 1.5;
+    color: #000;
+}
+
+
+

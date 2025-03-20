@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding:0;
+}
+h1{
+    font-family: sans-serif;
+    color: #ffffff;
+    padding: 5vh;
+}
+button{
+    margin: 2vh 5vh;
+    padding: 1vh;
+    border-radius: 100px;
+    border: none;
+}
+.custom-shape-divider-bottom-1742501455{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1742501455 svg{
+    position:relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;    
+}
+.custom-shape-divider-bottom-1742501455 .shape-fill{
+    fill: #ffffff;
+}
